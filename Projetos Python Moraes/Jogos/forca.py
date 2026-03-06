@@ -3,3 +3,4 @@ def jogar_forca():
     print("\nBem vindo ao Jogo da Forca\n")
     print("------------------------------")
     
+    
