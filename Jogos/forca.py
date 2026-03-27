@@ -6,9 +6,11 @@ def jogar_forca():
     lista = ["_ _ _ _ _ _ "]
 
     palavra = "banana"
+    letras_acertadas = ["_", "_", "_", "_", "_", "_"]
     perdeu = False
     acertou = False
-    #enquanto nao acerta a palavra secreta o jogador não pode jogar
+    #enquanto nao acerta a palavra secreta 
+    #o jogador não pode jogar
 
     while (not perdeu and not acertou):
         chute = remover_acentos(input("Digite uma letra: ")).strip()
@@ -16,8 +18,9 @@ def jogar_forca():
         index = 0
         for letra in palavra:
             if (chute.lower() == letra.lower()):
-                print(f"A letra {chute} está na posição {index}!")
+                letras_acertadas[index] = letra
             index = index + 1
+        print(letras_acertadas)
 
 
 #como resolver ocento nas palavras
